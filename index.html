@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+
+	   <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
 <body>
 
+
+
 	<div class="container">
-		<div class="jumbotron">
-			<h1>Hangman Game</h1>
-			<p>TBD</p>
+	<section>
+		<div class="jumbotron-default">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="part">
+  						<div class="diamond">
+      						<div class="dia">
+        						<img src= "assets/images/logo3.gif" class= "img2" alt="" width="500" height="220" />
+        						<h1><img src="assets/images/logo2.png" class="img1"></h1>
+     						 </div>
+   						 </div>
+					</div>
+				</div>	
+			</div>
 		</div>
-	</div>
 	
+	
+
 	<div class="panel panel-default">
 	  	<div class="panel-heading">
 	  		<h2>Word to Guess</h2>
@@ -23,34 +43,38 @@
 	  	</div>
 	</div>
 	
-	<div class="panel panel-default">
+	<div class="panel panel-fluid">
 	  	<div class="panel-heading">
-			Wrong Guesses: <span id="wrongGuesses"></span>
+	  		<div class="row">
+	  			<div class="col-lg-12">
+	  				Wrong Guesses: <span id="wrongGuesses"></span>
+	  			</div>
+	  		</div>
 	 	</div>
 	</div>
 
 	
-	<div class="panel panel-default">
+	<div class="panel panel-fluid">
 	  	<div class="panel-heading">
 			Guesses Left: <span id="numGuesses"></span>
 	 	</div>
 	</div>
 
-	<div class="panel panel-default">
+	<div class="panel panel-fluid">
 	  	<div class="panel-heading">
 			Win Counter: <span id="winCounter"></span>
 	 	</div>
 	</div>
 	
-	<div class="panel panel-default">
+	<div class="panel panel-fluid">
 	  	<div class="panel-heading">
 			Loss Counter: <span id="lossCounter"></span>
 	 	</div>
 	</div>
-
+	</section>
 	<script src="assets/javascript/game.js"></script>
 
 	
-
+</div>
 </body>
 </html>

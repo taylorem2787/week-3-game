@@ -1,7 +1,7 @@
 // GLOBAL VARIABLES (rules) object
 //-------------------------------------------------
 // ARRAYS AND VARIATION FOR HOLDING DATA
-var wordOptions = ["2pac", "biggie", "methodman", "jarule", "wutang" ];
+var wordOptions = ["kelly", "zack", "slater", "screech", "lisa", "jessie", "mrbelding"];
 var selectedWord = "";
 var lettersinWord = [];
 var numBlanks = 0;
@@ -17,7 +17,7 @@ var guessesLeft = 9;
 
 
 
-// FUNCTIONS (Reusable blocks of code that i will call upon when needed)
+// FUNCTIONS (Reusable blocks of code that I will call upon when needed)
 //------------------------------------------------------------------------------
 
 function startGame () {
@@ -93,7 +93,7 @@ function roundComplete(){
 
 		// Update the win counter in the 
 		document.getElementById("winCounter").innerHTML = winCount;
-
+		
 		startGame();
 
 	}
@@ -112,10 +112,10 @@ function roundComplete(){
 //MAIN PROCESS ()
 //--------------------------------------------------------------
 
-// Inxitiates the code the first time
+// Initiates the code the first time
 startGame();
 
-//Register keyclcicks
+//Register keyclicks
 
 document.onkeyup = function(event) {
 	var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
@@ -123,7 +123,7 @@ document.onkeyup = function(event) {
 	roundComplete();
 
 	// Testing / Debugging
-	console.log(letterGuessed);
+	console.log(letterGuessed); 
 }
 
 

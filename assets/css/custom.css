@@ -1,0 +1,72 @@
+
+html, body {
+    background-image: url("../images/background4.jpg")!important;
+    height: 100%;
+    margin: 0;
+    /*max-width: 960px;*/
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: none;
+    color: blue;
+
+    /*box-shadow: 10px 10px 5px blue;*/
+}
+
+section {
+	height: 100%;
+	border: 3px solid magenta;
+	margin: 25px;
+	padding-bottom: 20px;
+	padding-top: 2px;
+	padding-left: 10px;
+	background-color: aquamarine;
+
+}
+
+.jumbotron-default {
+	text-align: center;
+}
+
+.panel {	
+	font-family: 'Press Start 2P';
+	text-align: center;
+	max-width: 100%;
+	margin-right: 4%;
+	margin-left: 2%;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: 0;
+	/*margin-right: 20px;*/
+}
+
+h2, .panel-default, .panel-heading {
+	background-color: transparent;
+}
+
+.part {
+    /*border: 1px solid #000;*/
+    position: relative;
+}
+
+.img1 {
+    /*border: 1px solid #f00;*/
+    position: relative;
+    z-index: 2;
+    margin-top: -6%;
+    padding-left: 40px;
+    width: 50%;
+}
+
+.img2 {
+    /*border: 1px solid #0f0;*/
+    position: relative;
+    z-index: 1;
+    top: 30px;
+    left: 12px;
+}
+
+
+
+
