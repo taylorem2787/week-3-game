@@ -1,72 +1,146 @@
 
-html, body {
-    background-image: url("../images/background4.jpg")!important;
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.jpg")!important;
     height: 100%;
-    margin: 0;
-    /*max-width: 960px;*/
     width: 100%;
-    padding: 0;
-    font-size: 16px;
+    padding: 0px;
+    margin: auto 0;
+    font-size: 18px;
+    line-height: 34px:;
     text-transform: uppercase;
     font-family: none;
-    color: blue;
-
-    /*box-shadow: 10px 10px 5px blue;*/
+    text-align: center;
 }
+
+
+h1 {
+    margin: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+   
+h3 {
+    background-color: aquamarine;
+}
+
+h2 {
+    width: 400px;
+    padding: 2px;
+    margin-left: 16%;
+    margin-right: 5%; 
+    align-items: 
+    }
 
 section {
-	height: 100%;
-	border: 3px solid magenta;
-	margin: 25px;
-	padding-bottom: 20px;
-	padding-top: 2px;
-	padding-left: 10px;
-	background-color: aquamarine;
-
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    border: 12px ridge black;
+    margin: 5% 8% 10% 0%;
+    padding-bottom: 40px;
+    padding-top: 0;
+    text-align: center;
+    background-image: url("../images/background4.jpg"); 
+    float: right;
 }
 
-.jumbotron-default {
-	text-align: center;
+#row2 {
+    background-color: aquamarine;
+    width: 95%;
+    text-align: center;
+    margin: 2.5% 0px 2.5% 2.5%;
+    background-color: aquamarine;
+    border-radius: 5px;
 }
 
-.panel {	
-	font-family: 'Press Start 2P';
-	text-align: center;
-	max-width: 100%;
-	margin-right: 4%;
-	margin-left: 2%;
-	margin-bottom: 0;
-	background-color: transparent;
-	border: 0;
-	/*margin-right: 20px;*/
+.container {
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    /*margin: 5% 15% 5% 15%;*/   
 }
 
-h2, .panel-default, .panel-heading {
-	background-color: transparent;
+.banner {
+    width: 100%; 
+    overflow: auto;  
 }
 
-.part {
-    /*border: 1px solid #000;*/
-    position: relative;
+
+.panel-default {
+    background-color: transparent;
+    border: none;
+}
+
+.panel-body {
+    background-color: aquamarine;
+    color: fff;
+    padding: 0px;
+}
+ 
+  /*sibling panels*/
+    .panel > .panel-default {  
+                background-color: aquamarine;
+                width: 95%;
+                text-align: center;
+                margin-left: 2.5%;
+}
+
+    .panel > .panel-heading { 
+                 background-color: aquamarine; 
+                 height:100%;
+                 border-radius: 5px;
 }
 
 .img1 {
-    /*border: 1px solid #f00;*/
     position: relative;
-    z-index: 2;
-    margin-top: -6%;
-    padding-left: 40px;
-    width: 50%;
+    top: 2px;
+    left: 0px;
+    z-index: 8;
+    border: 0;
+    width: 100%;
+    border-radius: 14px;
 }
 
 .img2 {
-    /*border: 1px solid #0f0;*/
     position: relative;
-    z-index: 1;
-    top: 30px;
-    left: 12px;
+    width: 100%;
+    z-index: 8;
+    padding-left: 6px;
+    background: transparent;
+    height: 100px;
+    margin-top: -47px;
+}
+
+.img3 {
+    position: relative;
+    width: 280px;
+    margin: 0;
+    padding-left: 14%;
 }
 
 
+.outside-shadow {
+    box-shadow: 0px -9px 38px 10px #0F0E0E;
+    -webkit-box-shadow: 0px -9px 38px 10px #0F0E0E;
+    -moz-box-shadow: 0px -9px 38px 10px #0F0E0E;
+    -o-box-shadow: 0px -9px 38px 10px #0F0E0E;
+}
+
+.inside-shadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    box-shadow: inset 4px -18px 54px 2px #423B3B;
+    -webkit-box-shadow: inset 4px -18px 54px 2px #423B3B;
+    -moz-box-shadow: inset 4px -18px 54px 2px #423B3B;
+    -o-box-shadow: inset 4px -18px 54px 2px #423B3B;
+}
 
 

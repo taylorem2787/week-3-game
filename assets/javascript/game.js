@@ -8,7 +8,6 @@ var numBlanks = 0;
 var blanksAndSuccesses = []; // s _ _ _ _ _ _ _ _
 var wrongLetters = [];
 
-//
 
 // Game Counters
 var winCount = 0;
@@ -74,11 +73,10 @@ function checkLetters(letter) {
 		guessesLeft	--
 	}
 	// Test and Debugging 
-
 	console.log(blanksAndSuccesses);
 }
 
-function roundComplete(){
+function roundComplete() {
 	console.log("Win Count: " + winCount + " | Loss Count: " + lossCount + " | Guesses Left " + guessesLeft);
 
 	// Update the HTML to reflect the most recent count stats
@@ -90,10 +88,9 @@ function roundComplete(){
 	if (lettersinWord.toString() == blanksAndSuccesses.toString()) {
 		winCount++;
 		alert("You Won!");
-
 		// Update the win counter in the 
 		document.getElementById("winCounter").innerHTML = winCount;
-		
+
 		startGame();
 
 	}
@@ -122,12 +119,6 @@ document.onkeyup = function(event) {
 	checkLetters(letterGuessed);
 	roundComplete();
 
-	// Testing / Debugging
+	//Testing / Debugging
 	console.log(letterGuessed); 
 }
-
-
-
-
-
-

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	   <!-- Latest compiled and minified CSS -->
@@ -12,67 +13,94 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
 <body>
+<!-- Jumbotron -->
+<div class="container">
+<section class="outside-shadow">
 
 
-
-	<div class="container">
-	<section>
-		<div class="jumbotron-default">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="part">
-  						<div class="diamond">
-      						<div class="dia">
-        						<img src= "assets/images/logo3.gif" class= "img2" alt="" width="500" height="220" />
-        						<h1><img src="assets/images/logo2.png" class="img1"></h1>
-     						 </div>
-   						 </div>
-					</div>
-				</div>	
-			</div>
+	<div class="jumbotron-default">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="banner">
+					<h1>
+        				<img src= "assets/images/logo.gif" class= "img1" alt="" id="logo" width="95%" height="220" />
+        				<img src="assets/images/hangman.png" class="img2" "hangmanlogo">
+        			</h1>
+        		</div>
+   			</div>
 		</div>
-	
-	
+	</div>
 
 	<div class="panel panel-default">
+		<div class="row" id="row2">
+			<div class="col-lg-12">
+	  			<div class="panel-heading">
+	  				<h2>
+	  				<img src="assets/images/wordtoguess.png" class="img3">
+	  				</h2>
+	  			</div>
+	  			<div class="panel-body">
+	   				<h3 id="wordToGuess"> __ __ __ __ __ __ __ __ </h3> 
+	  			</div>
+			</div>
+		</div>	
+	<div class="panel panel-default">
 	  	<div class="panel-heading">
-	  		<h2>Word to Guess</h2>
-	  	</div>
-	  	<div class="panel-body">
-	   		<h3 id="wordToGuess"> __ __ __ __ __ __ __ __ </h3> 
-	  	</div>
-	</div>
-	
-	<div class="panel panel-fluid">
-	  	<div class="panel-heading">
-	  		<div class="row">
+	  		<div class="row" id="row3">
 	  			<div class="col-lg-12">
 	  				Wrong Guesses: <span id="wrongGuesses"></span>
 	  			</div>
 	  		</div>
 	 	</div>
 	</div>
-
 	
-	<div class="panel panel-fluid">
+	<div class="panel panel-default">
 	  	<div class="panel-heading">
-			Guesses Left: <span id="numGuesses"></span>
-	 	</div>
+	  		<div class="row" id="row4">
+	  			<div class="col-lg-12">
+					Guesses Left: <span id="numGuesses"></span>
+	 			</div>
+			</div>
+		</div>
+	</div>		
+
+	<div class="panel panel-default">
+	  	<div class="panel-heading">
+			<div class="row" id="row5">
+	  			<div class="col-lg-12">
+					Win Counter: <span id="winCounter"></span>
+	 			</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="panel panel-default">
+	  	<div class="panel-heading">
+	  		<div class="row" id="row6">
+	  			<div class="col-lg-12">
+					Loss Counter: <span id="lossCounter"></span>
+	 			</div>
+			</div>
+		</div>	
 	</div>
 
-	<div class="panel panel-fluid">
+	<div class="panel panel-default">
 	  	<div class="panel-heading">
-			Win Counter: <span id="winCounter"></span>
-	 	</div>
+	  		<div class="row" id="row7">
+	  			<div class="col-lg-12">
+					<audio id="bell">
+						<source src="bell.wav" type="audio/wav">
+					</audio>
+	 			</div>
+			</div>
+		</div>	
 	</div>
 	
-	<div class="panel panel-fluid">
-	  	<div class="panel-heading">
-			Loss Counter: <span id="lossCounter"></span>
-	 	</div>
-	</div>
-	</section>
+</section>	
+</div>
+
 	<script src="assets/javascript/game.js"></script>
+	
 
 	
 </div>
