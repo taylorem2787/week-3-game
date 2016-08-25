@@ -1,3 +1,4 @@
+
 // GLOBAL VARIABLES (rules) object
 //-------------------------------------------------
 // ARRAYS AND VARIATION FOR HOLDING DATA
@@ -86,13 +87,16 @@ function roundComplete() {
 
 	// Check is user won
 	if (lettersinWord.toString() == blanksAndSuccesses.toString()) {
-		winCount++;
-		alert("You Won!");
-		// Update the win counter in the 
+		//Timeout to let winning letter populate
+		setTimeout(function(){ 
+			winCount++;
+			alert("You Won!");
+		// Update the win counter 
 		document.getElementById("winCounter").innerHTML = winCount;
 
 		startGame();
 
+		}, 1000);
 	}
 
 	// Check if user lost
@@ -121,4 +125,14 @@ document.onkeyup = function(event) {
 
 	//Testing / Debugging
 	console.log(letterGuessed); 
+
 }
+// callback
+
+
+
+
+// $ (function(event) {
+// 	ion.sound.init() ;
+// 	$("#b01").on()
+// }
